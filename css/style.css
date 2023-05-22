@@ -1,0 +1,138 @@
+iframe {
+    display: block;
+    border-style:none;
+}
+
+html, body {
+    height: 100%;
+}
+
+.grass {
+  width: 100%;
+  border-color: #47b93b transparent transparent transparent;
+  border-radius: 46%/100px 89px 0px 34px;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(#bfea7f, white);
+  position: absolute;
+  z-index: -1;
+}
+
+.envolvente {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.iframecontainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.iframecontainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.content {
+    padding-bottom: 8em;
+}
+
+#vaca {
+    text-align: right;
+    animation: moveRight 30s linear 0.5s 1 normal forwards;
+}
+
+#vaca:hover {
+    cursor: pointer;
+}
+
+@keyframes moveRight {
+    0%   {margin-right: 0;}
+    100% {margin-right: 20%;}
+}
+
+#contenido { 
+    flex-grow: 1;
+    background-image: url('../images/uberfooter.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.responsivemap {
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+
+.responsivemap iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.hero-background.is-transparent {
+  opacity: 0.3;
+}
+
+.imagenboton {
+	box-shadow: 8px -8px 0 -2px #8AEB32, 8px -8px 0 0 black;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.imagenboton:hover {
+	box-shadow: 4px -4px 0 -2px #8AEB32, 4px -4px 0 0 black;
+	opacity: 0.8;
+	transition: opacity 0.3s ease-in-out;
+}
+
+@media(max-width: 770px) {
+	.reversed {
+		/*flex-direction: column-reverse;*/
+    		display: flex;
+		flex-flow: column;
+	}
+	
+	#elemento2 {
+		order: 1;		
+	}
+
+	#elemento1 {
+		order: 2;
+	}
+
+}
+
+.imgsize {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-item .imgsize {
+	max-height: unset; !important
+}
