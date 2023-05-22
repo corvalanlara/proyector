@@ -48,12 +48,12 @@ html, body {
     padding-bottom: 8em;
 }
 
-#vaca {
+#animal {
     text-align: right;
     animation: moveRight 30s linear 0.5s 1 normal forwards;
 }
 
-#vaca:hover {
+.animal:hover {
     cursor: pointer;
 }
 

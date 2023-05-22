@@ -24,12 +24,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-function chooseRandom() {
-    let lista = ['🐄', '🐓', '🐖', '🦙', '🐎', '🐑', '🐏'];
-    let random = Math.floor(Math.random() * lista.length);
-    return lista[random];
+function returnAnimal(nombre) {
+    let lista = { vaca: '🐄', gallina: '🐓', cerdo: '🐖', llama: '🦙', caballo: '🐎', oveja: '🐑', carnero: '🐏'};
+    if (nombre) {
+        return lista[nombre];
+    } else {
+        let keys = Object.keys(lista);
+        let random = keys[Math.floor(Math.random() * keys.length)];
+        return lista[random];
+    }
 }
 
-let vaca = document.getElementById('vaca');
-vaca.innerHTML = chooseRandom();
+function changeAnimal(nombre) {
+    let animal = document.getElementById('animal');
+    animal.innerHTML = returnAnimal(nombre);
+}
 
+let animal = document.getElementById('animal');
+animal.innerHTML = returnAnimal();
+
+let vaca = document.getElementById('vaca');
+vaca.addEventListener('click', function () { changeAnimal('vaca'); });
+
+let gallina = document.getElementById('gallina');
+gallina.addEventListener('click', function() { changeAnimal('gallina'); });
+
+let caballo = document.getElementById('caballo');
+caballo.addEventListener('click', function () { changeAnimal('caballo'); });
+
+let cerdo = document.getElementById('cerdo');
+cerdo.addEventListener('click', function () { changeAnimal('cerdo'); });
+
+let llama = document.getElementById('llama');
+llama.addEventListener('click', function () { changeAnimal('llama'); });
+
+let oveja = document.getElementById('oveja');
+oveja.addEventListener('click', function () { changeAnimal('oveja'); });
+
+let carnero = document.getElementById('carnero');
+carnero.addEventListener('click', function () { changeAnimal('carnero') });
