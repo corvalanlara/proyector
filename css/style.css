@@ -3,8 +3,24 @@ iframe {
     border-style:none;
 }
 
+.highlight {
+    color:#fff;
+    background:#FA7C91;
+    box-shadow:5px 0 0 #FA7C91, -5px 0 0 #FA7C91;
+    padding: 5px 0;
+}
+
+dt {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
 html, body {
     height: 100%;
+}
+
+body {
+    max-width: 2000px;
 }
 
 .grass {
@@ -71,9 +87,11 @@ html, body {
 
 .responsivemap {
 overflow:hidden;
-padding-bottom:56.25%;
+padding-bottom: 56.25%;
 position:relative;
 height:0;
+margin-top: 2em;
+margin-bottom: 2em;
 }
 
 .responsivemap iframe{
@@ -128,11 +146,26 @@ position:absolute;
 }
 
 .imgsize {
-  height: 100px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .navbar-item .imgsize {
 	max-height: unset; !important
+}
+
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.hero-background.is-transparent {
+  opacity: 0.3;
 }
