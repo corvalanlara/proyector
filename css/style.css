@@ -3,6 +3,10 @@ iframe {
     border-style:none;
 }
 
+.navbar-burger {
+    margin-left: auto;
+}
+
 .highlight {
     color:#fff;
     background:#FA7C91;
