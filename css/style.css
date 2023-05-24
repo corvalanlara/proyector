@@ -15,12 +15,8 @@ dt {
     padding-bottom: 0.5em;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
-    max-width: 2000px;
+    background-color: #FA7C91;
 }
 
 .grass {
@@ -38,6 +34,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
 }
 
 .iframecontainer {
