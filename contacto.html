@@ -62,21 +62,21 @@
          enctype="multipart/form-data"
          method="POST">
             <div class="field">
-                <label class="label">Nombre</label>
+                <label for="nombre" class="label">Nombre</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Juan">
+                    <input id="nombre" name="nombre" class="input" type="text" placeholder="Juan" required autofocus>
                 </div>
             </div>
             <div class="field">
-                <label class="label">Correo</label>
+                <label for="correo" class="label">Correo</label>
                 <div class="control">
-                    <input class="input" type="email" placeholder="juan@correo.com">
+                    <input id="correo" name="correo" class="input" type="email" placeholder="juan@correo.com" required>
                 </div>
             </div>
             <div class="field">
-                <label class="label">Mensaje</label>
+                <label for="mensaje" class="label">Mensaje</label>
                 <div class="control">
-                    <textarea class="textarea" placeholder="Escribe aquí el mensaje que nos quieres enviar"></textarea>
+                    <textarea id="mensaje" name="mensaje" class="textarea" placeholder="Escribe aquí el mensaje que nos quieres enviar" required></textarea>
                 </div>
             </div>
             <div class="field is-grouped">
