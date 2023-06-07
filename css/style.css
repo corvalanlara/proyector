@@ -3,6 +3,10 @@ iframe {
     border-style:none;
 }
 
+p {
+   font-size: 20px;
+}
+
 .navbar-burger {
     margin-left: auto;
 }
